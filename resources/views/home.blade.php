@@ -1,7 +1,8 @@
 <x-layout>
-    <main id="main" class="main h-fit w-screen pl-16 pb-12 relative">
-        <section id="section--home-hero" class="section--home-hero flex items-start overflow-hidden h-[calc(100vh_-_64px)]">
-            <div class="h-full z-10 flex flex-col justify-evenly w-5/6 pl-32">
+    <main id="main" class="main h-fit pb-12 relative w-100">
+        <!-- Home -->
+        <section id="section--home-hero" class=" pl-16 section--home-hero flex items-start h-[calc(100vh_-_64px)]">
+            <div class="h-full flex flex-col justify-evenly w-5/6 md:pl-24 pl-0 z-50">
                 <div >
                     <h1 class="whitespace-nowrap text-[12rem] leading-none font-extralight">Can I 
                     <br>borrow 
@@ -14,75 +15,81 @@
                 </div>
                 
                 <div class="text-left">
-                    <p class="w-4/6 text-left tracking-wide font-thin text-[2rem]">An easy and effortless community resource for those who are struggling to find the supplies needed to succeed in school and educational endeavors</p>
+                    <p class="w-1/2 text-left tracking-wide font-light text-[2rem]">An easy and effortless community resource for those who are struggling to find the supplies needed to succeed in school and educational endeavors</p>
                 </div>
-                <div class="flex w-full items-center">
-                    <a class="mr-6 text-center text-[2rem] w-full px-10 py-4 lg:py-8 rounded-md border-2 z-10 border-blue-500 bg-blue-500 hover:border-blue-100 hover:bg-[var(--black)] transition-colors" href="/borrow">
+                <div class="flex w-full items-center relative">
+                    <a class="mr-6 text-center text-[2rem] w-full px-10 py-4 lg:py-8 rounded-md border border-blue-500  bg-blue-500 backdrop-blur-md hover:border-blue-100 hover:bg-blue-500/[0.25] transition-colors max-w-[320px]" href="/borrow">
                         Browse 
                         <br class="block lg:hidden">
                         Supplies
                     </a>
-                    <a class="mr-6 text-center text-[2rem] w-full px-10 py-4 lg:py-8 rounded-md border-2 z-10 bg-[var(--black)] border-blue-100 hover:border-blue-500 transition-colors" href="/offer">
+                    <a class="mr-6 text-center text-[2rem] w-full px-10 py-4 lg:py-8 rounded-md border border-blue-100 bg-black/[.25] hover:bg-transparent backdrop-blur-md hover:border-blue-500 transition-colors max-w-[320px]" href="/offer">
                         Offer 
                         <br class="block lg:hidden">
                         Supplies
                     </a>
-                    <a class="mr-6 text-center text-[2rem] w-full px-10 py-4 lg:py-8 rounded-md border-2 z-10 bg-[var(--black)] border-blue-100 hover:border-green-500 transition-colors" href="/ask-for">
+                    <a class="mr-6 text-center text-[2rem] w-full px-10 py-4 lg:py-8 rounded-md border bg-black/[.25] hover:bg-transparent border-blue-100 backdrop-blur-md hover:border-green-500 transition-colors max-w-[320px]" href="/ask-for">
                         Ask 
                         <br class="block lg:hidden">
                         <span class="whitespace-nowrap">For Supplies</span>
                     </a>
                 </div>
             </div>
-            <div class="w-1/3 block h-[calc(100vh_-_64px)] relative">
-                <div class="bg-green-500 h-full w-[200px] absolute -bottom-10 right-0 bg-[url('/public/imgs/heroPillar.png')] rounded-md">
+            <div class="block h-[calc(100vh_-_64px)] relative">
+                <div class="bg-green-500 h-[90%] w-[220px] absolute -bottom-10 -right-[260px] bg-[url('/public/imgs/heroPillar.png')] rounded-md">
 
                 </div>
-                <div class="w-[550px] h-[550px] rounded-full bg-blue-500 absolute bg-[url('/public/imgs/heroCircle.png')] -right-[275px] bottom-0 z-20">
+                <div class="w-[500px] h-[500px] rounded-full bg-blue-500 absolute bg-[url('/public/imgs/heroCircle.png')] -right-[450px] -bottom-[50px] z-20">
 
                 </div>
-                <div class="bg-red-600 w-[600px] h-[600px] absolute bg-[url('/public/imgs/heroTriangle.png')] -bottom-[300px] -right-[0] rotate-[40deg] rounded-md">
+                <div class="bg-red-600 w-[600px] h-[600px] absolute bg-[url('/public/imgs/heroTriangle.png')] -bottom-[350px] -right-[150px] rotate-[45deg] rounded-lg">
 
                 </div>
             </div>
         </section>
-        <article id="section--home-about" class="section--home-about text-[2rem]">
-            <div class="min-h-fit -ml-5 w-screen bg-sky-900 bg-no-repeat bg-center bg-contain bg-[url('/public/imgs/schoolsupplies.svg')]  grid grid-cols-2 grid-rows-2 mb-4 relative mt-10">
-                <div class="school-supplies-background absolute top-1/3 h-2/3">
-                    
-                </div>
-                <div class="flex flex-col justify-center items-start px-5 pt-5">
-                    <h2 class="text-3xl mb-5 font-light w-full text-center z-10">Borrow for good</h2>
-                    <p class="font-thin text-lg z-10">A simple request from a student can often seem like nothing, but for some, it may represent an underlying problem that faces families around the country. Getting supplies for the classroom can be an expensive and simply unatainable as the school year carries on. We're here to connect those that can afford to give a little to help those that need a little.</p>
+        <!-- About -->
+        <article id="section--home-about" class="section--home-about">
+            <div class="px-32 bg-[url('/public/imgs/heroCircle.png')] grid grid-cols-2 grid-rows-3 mb-4 relative mt-40">
+                <div class="flex flex-col justify-center items-start">
+                    <h2 class="text-[6rem] mb-5 w-full text-center z-10">Borrow For Good</h2>
+                    <p class="font-light text-base z-10">A simple request from a student can often seem like nothing, but for some, it may represent an underlying problem that faces families around the country. Getting supplies for the classroom can be an expensive and simply unatainable as the school year carries on. We're here to connect those that can afford to give a little to help those that need a little.</p>
                     <br>
-                    <p class="font-thin text-lg z-10">In the United States there are an estimated 11.6 million children living below the poverty line. For these families, purchasing school supplies is not something that fits in the budget.</p>
+                    <p class="font-light text-base z-10">In the United States there are an estimated 11.6 million children living below the poverty line. For these families, purchasing school supplies is not something that fits in the budget.</p>
                 </div>
-                <div class=" flex items-center justify-center px-10"><div class="border-solid border-2 border-sky-500 w-5/6 xl:w-3/4 bg-sky-900 h-72 sm:h-3/4 md:max-h-[200px] relative">
-                    <div class="border-solid border-2 border-sky-500 h-full w-full bg-sky-900 absolute right-5 top-5">
-                        <div class="w-full h-full text-center py-5 px-2">
-                            <h3 class="mb-3">Cost of School Supplies
-                                <br><i>On Average</i>
+                <div class="w-full text-base row-start-3 z-10">
+                <br>
+                <p class="font-light">According to a
+                    <a target="_blank" class="underline underline-offset-2" href="https://www.lendingtree.com/credit-cards/study/back-to-school-spending-leads-many-into-debt/#:~:text=1%20in%203%20parents%20of,school%20supplies%20as%20expenses%20increase.">
+                    <i> 2021 study by Lending Tree</i>
+                    </a>, 1 in 3 parents of school-age children expect to go into debt when shopping for back-to-school supplies. For parents with children attending schools that require hybrid learning due to the pandemic, 42% believe they'll go in debt while paying for school supplies.
+                </p>
+            </div>
+                <div class="flex items-center justify-center col-start-2 col-end-3 row-start-1 row-end-2 px-10">
+                    <div class="border w-full h-4/6 relative backdrop-blur-md rounded-md bg-black/[0.25] ml-12">
+                    <div class="border w-full h-full absolute backdrop-blur-md rounded-md right-10 top-10 pl-8 bg-black/[0.5] ">
+                        <div class="w-full h-1/2 text-center py-8 px-10">
+                            <h3 class="mb-4 text-lg">The average cost of <br> school supplies
                             </h3>
-                            <div class="flex items-center flex-col sm:flex-row">
+                            <div class="flex items-center text-base">
                                 <div class="sm:w-1/5 w-full mx-1">
-                                    <p class="font-thin sm:text-left mb-1 text-center">Elementary</p>
-                                    <div class="bg-red-500 py-1 min-w-fit mx-auto sm:mx-0 px-4 sm:px-0 w-1/5 sm:w-full">$1,017.37
+                                    <p class="font-light sm:text-left mb-1 text-center">Elementary</p>
+                                    <div class="bg-red-500 py-1 min-w-fit mx-auto sm:mx-0 px-4 sm:px-0 w-1/5 sm:w-full backdrop-blur-lg">$1,017.37
                                         
                                     </div>
                                 </div>
                                 <div class="sm:w-2/5 w-full mx-1">
-                                    <p class="font-thin sm:text-left text-center mb-1 xl:whitespace-nowrap">Middle School
+                                    <p class="font-light sm:text-left text-center mb-1 xl:whitespace-nowrap">Middle School
                                         
                                     </p>
-                                    <div class="bg-blue-500 py-1 mx-auto sm:mx-0 min-w-fit px-8 sm:px-0 w-2/5 sm:w-full">$1,277.35
+                                    <div class="bg-blue-500 py-1 mx-auto sm:mx-0 min-w-fit px-8 sm:px-0 w-2/5 sm:w-full backdrop-blur-lg">$1,277.35
 
                                     </div>
                                 </div>
                                 <div class="sm:w-3/5 w-full mx-1">
-                                    <p class="font-thin sm:text-left text-center mb-1">High School
+                                    <p class="font-light sm:text-left text-center mb-1">High School
 
                                     </p>
-                                    <div class="bg-green-500 py-1 mx-auto sm:mx-0 min-w-fit px-10 sm:px-0 w-3/5 sm:w-full">$1,667.90
+                                    <div class="bg-green-500 py-1 mx-auto sm:mx-0 min-w-fit px-10 sm:px-0 w-3/5 sm:w-full backdrop-blur-lg">$1,667.90
 
                                     </div>
                                 </div>
@@ -91,15 +98,12 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full col-span-2 pb-5 px-5 row-span-1 z-10">
-                <br>
-                <p class="font-thin">According to a
-                    <a target="_blank" href="https://www.lendingtree.com/credit-cards/study/back-to-school-spending-leads-many-into-debt/#:~:text=1%20in%203%20parents%20of,school%20supplies%20as%20expenses%20increase.">
-                    <i> 2021 study by Lending Tree</i>
-                    </a>, 1 in 3 parents of school-age children expect to go into debt when shopping for back-to-school supplies. For parents with children attending schools that require hybrid learning due to the pandemic, 42% believe they'll go in debt while paying for school supplies.
-                </p>
-            </div>
+   
         </article>
+                <!-- Mission -->
+        <section class="h-[100vh]">
+
+        </section>
     </main>
     <script>
         const words = [
@@ -155,7 +159,6 @@
 
             setTimeout(() => {
                 const newArr = [words[i], words[j]];
-                console.log(newArr)
                 wordContainer.innerHTML = "";
                 wordContainer.innerHTML = `                        
                             <span class="${words[i].color} block" style="opacity: 1">${words[i].item}<span class="${words[i].color}">?</span></span>

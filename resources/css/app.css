@@ -4,9 +4,9 @@
 
 html {
     font-size: 62.5%;
+    font-family: Figtree, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
 :root {
     --black: #0c0a09;
-    --yellow: #eab308;
 }

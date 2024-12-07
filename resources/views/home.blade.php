@@ -48,27 +48,28 @@
             </div>
         </section>
         <!-- About -->
-        <article id="section--home-about" class="section--home-about">
-            <div class="px-32 bg-[url('/public/imgs/heroCircle.png')] grid grid-cols-2 grid-rows-3 mb-4 relative mt-40">
+        <article id="section--home-about" class="section--home-about max-h-fit">
+            <div class="px-32 bg-[url('/public/imgs/heroCircle.png')] grid grid-cols-2 grid-rows-2 mb-4 relative mt-40">
                 <div class="flex flex-col justify-center items-start">
                     <h2 class="text-[6rem] mb-5 w-full text-center z-10">Borrow For Good</h2>
                     <p class="font-light text-base z-10">A simple request from a student can often seem like nothing, but for some, it may represent an underlying problem that faces families around the country. Getting supplies for the classroom can be an expensive and simply unatainable as the school year carries on. We're here to connect those that can afford to give a little to help those that need a little.</p>
                     <br>
                     <p class="font-light text-base z-10">In the United States there are an estimated 11.6 million children living below the poverty line. For these families, purchasing school supplies is not something that fits in the budget.</p>
                 </div>
-                <div class="w-full text-base row-start-3 z-10">
-                <br>
-                <p class="font-light">According to a
-                    <a target="_blank" class="underline underline-offset-2" href="https://www.lendingtree.com/credit-cards/study/back-to-school-spending-leads-many-into-debt/#:~:text=1%20in%203%20parents%20of,school%20supplies%20as%20expenses%20increase.">
-                    <i> 2021 study by Lending Tree</i>
-                    </a>, 1 in 3 parents of school-age children expect to go into debt when shopping for back-to-school supplies. For parents with children attending schools that require hybrid learning due to the pandemic, 42% believe they'll go in debt while paying for school supplies.
-                </p>
-            </div>
-                <div class="flex items-center justify-center col-start-2 col-end-3 row-start-1 row-end-2 px-10">
+              
+                <div class="w-full text-base z-10 -mt-4 row-start-2 col-start-1 col-end-3">
+                    <br>    
+                    <p class="font-light">According to a
+                        <a target="_blank" class="underline underline-offset-2 decoration-1" href="https://www.lendingtree.com/credit-cards/study/back-to-school-spending-leads-many-into-debt/#:~:text=1%20in%203%20parents%20of,school%20supplies%20as%20expenses%20increase.">
+                        <i> 2021 study by Lending Tree</i>
+                        </a>, 1 in 3 parents of school-age children expect to go into debt when shopping for back-to-school supplies. For parents with children attending schools that require hybrid learning due to the pandemic, 42% believe they'll go in debt while paying for school supplies.
+                    </p>
+                </div>
+                <div class="flex items-center justify-center col-start-2 col-end-3 row-start-1 row-end-2 px-10 -mb-16 h-[400px]">
                     <div class="border w-full h-4/6 relative backdrop-blur-md rounded-md bg-black/[0.25] ml-12">
                     <div class="border w-full h-full absolute backdrop-blur-md rounded-md right-10 top-10 pl-8 bg-black/[0.5] ">
-                        <div class="w-full h-1/2 text-center py-8 px-10">
-                            <h3 class="mb-4 text-lg">The average cost of <br> school supplies
+                        <div class="w-full h-1/2 text-center py-12 px-10">
+                            <h3 class="mb-8 text-lg">The cost of school supplies <br> <i>on average</i>
                             </h3>
                             <div class="flex items-center text-base">
                                 <div class="sm:w-1/5 w-full mx-1">
@@ -133,6 +134,7 @@
                 wordContainer.lastElementChild.style.transform = `translateY(${rotation}%)`
                 wordContainer.firstElementChild.style.opacity = opacityGoing;
                 wordContainer.lastElementChild.style.opacity = opacityComing;
+                
                     if (idx >= 100) {
                         idx = 100;
                     }

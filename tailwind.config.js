@@ -15,7 +15,8 @@ export default {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
             fontSize: {
-                'sm':   '1.8rem',
+                'xsm':   '1.6rem',
+                'ssm':   '1.8rem',
                 'base': '2rem',
                 'lg':   '2.6rem',
                 'xl':   '3rem',

@@ -1,7 +1,7 @@
 <x-layout>
     <main id="main" class="main h-fit pb-12 relative w-100">
         <!-- Home -->
-        <section id="section--home-hero" class=" pl-16 section--home-hero flex items-start h-[calc(100vh_-_64px)]">
+        <section id="section--home-hero" class="pl-16 mb-52 flex items-start h-[calc(100vh_-_64px)]">
             <div class="h-full flex flex-col justify-evenly w-5/6 md:pl-24 pl-0 z-50">
                 <div >
                     <h1 class="whitespace-nowrap text-[12rem] leading-none font-extralight">Can I 
@@ -23,12 +23,12 @@
                         <br class="block lg:hidden">
                         Supplies
                     </a>
-                    <a class="mr-6 text-center text-[2rem] w-full px-10 py-4 lg:py-8 rounded-md border border-blue-100 bg-black/[.25] hover:bg-transparent backdrop-blur-md hover:border-blue-500 transition-colors max-w-[320px]" href="/offer">
+                    <a class="mr-6 text-center text-[2rem] w-full px-10 py-4 lg:py-8 rounded-md border border-[var(--border)] bg-black/[.25] hover:bg-transparent backdrop-blur-md hover:border-blue-500 transition-colors max-w-[320px]" href="/offer">
                         Offer 
                         <br class="block lg:hidden">
                         Supplies
                     </a>
-                    <a class="mr-6 text-center text-[2rem] w-full px-10 py-4 lg:py-8 rounded-md border bg-black/[.25] hover:bg-transparent border-blue-100 backdrop-blur-md hover:border-green-500 transition-colors max-w-[320px]" href="/ask-for">
+                    <a class="mr-6 text-center text-[2rem] w-full px-10 py-4 lg:py-8 rounded-md border border-[var(--border)] bg-black/[.25] hover:bg-transparent  backdrop-blur-md hover:border-green-500 transition-colors max-w-[320px]" href="/ask-for">
                         Ask 
                         <br class="block lg:hidden">
                         <span class="whitespace-nowrap">For Supplies</span>
@@ -48,16 +48,16 @@
             </div>
         </section>
         <!-- About -->
-        <article id="section--home-about" class="section--home-about max-h-fit">
-            <div class="px-32 bg-[url('/public/imgs/heroCircle.png')] grid grid-cols-2 grid-rows-2 mb-4 relative mt-40">
+        <article id="section--home-about" class="mb-52 max-h-[700px]">
+            <div class="px-32 bg-[url('/public/imgs/heroCircle.png')] grid grid-cols-2 grid-rows-1 mb-4 relative">
                 <div class="flex flex-col justify-center items-start">
-                    <h2 class="text-[6rem] mb-5 w-full text-center z-10">Borrow For Good</h2>
-                    <p class="font-light text-base z-10">A simple request from a student can often seem like nothing, but for some, it may represent an underlying problem that faces families around the country. Getting supplies for the classroom can be an expensive and simply unatainable as the school year carries on. We're here to connect those that can afford to give a little to help those that need a little.</p>
+                    <h2 class="text-[6rem] w-full text-center">Borrow For Good</h2>
+                    <p class="font-light text-base">A simple request from a student can often seem like nothing, but for some, it may represent an underlying problem that faces families around the country. Getting supplies for the classroom can be an expensive and simply unatainable as the school year carries on. We're here to connect those that can afford to give a little to help those that need a little.</p>
                     <br>
-                    <p class="font-light text-base z-10">In the United States there are an estimated 11.6 million children living below the poverty line. For these families, purchasing school supplies is not something that fits in the budget.</p>
+                    <p class="font-light text-base">In the United States there are an estimated 11.6 million children living below the poverty line. For these families, purchasing school supplies is not something that fits in the budget.</p>
                 </div>
               
-                <div class="w-full text-base z-10 -mt-4 row-start-2 col-start-1 col-end-3">
+                <div class="w-full text-base z-10 -mt-6 col-start-1 col-end-3">
                     <br>    
                     <p class="font-light">According to a
                         <a target="_blank" class="underline underline-offset-2 decoration-1" href="https://www.lendingtree.com/credit-cards/study/back-to-school-spending-leads-many-into-debt/#:~:text=1%20in%203%20parents%20of,school%20supplies%20as%20expenses%20increase.">
@@ -99,11 +99,34 @@
                     </div>
                 </div>
             </div>
-   
         </article>
-                <!-- Mission -->
-        <section class="h-[100vh]">
-
+        <!-- Mission -->
+        <section class="mt-50 px-32">
+            <h2 class="text-[6rem] w-full text-center">Our Goal</h2>
+            <p class="font-light text-base w-1/2 text-center mx-auto mb-20">To build an easy to use resource for those who can afford to help students and teachers in their community.</p>
+            <div class="h-[240px] flex items-center justify-around w-full">
+                <a href="" class="w-1/3 p-10 flex items-center justify-center group">
+                    <div class="text-center flex items-center justify-start flex-col">
+                        <img class="h-[100px] mx-auto mb-10" src="../imgs/borrow.svg" alt="">
+                        <h4 class="text-lg group-hover:underline decoration-1 underline-offset-2">Borrow</h4>
+                        <p class="text-base">Browse school supplies that are currently being offered</p>
+                    </div>
+                </a>
+                <a href="" class="w-1/3 p-10 flex items-center justify-center group">
+                    <div class="text-center flex items-center justify-start flex-col">
+                        <img class="h-[100px] mx-auto mb-10" src="../imgs/offer.svg" alt="">
+                        <h4 class="text-lg group-hover:underline decoration-1 underline-offset-2">Offer</h4>
+                        <p class="text-base">Offer school supplies for students and teachers</p>
+                    </div>
+                </a>
+                <a href="" class="w-1/3 p-10 flex items-center justify-center group">
+                    <div class="text-center flex items-center justify-start flex-col">
+                        <img class="h-[90px] mx-auto mb-10" src="../imgs/asking.svg" alt="">
+                        <h4 class="text-lg group-hover:underline decoration-1 underline-offset-2">Ask</h4>
+                        <p class="text-base">Make a request for school supplies for your classroom or student</p>
+                    </div>
+                </a>
+            </div>
         </section>
     </main>
     <script>

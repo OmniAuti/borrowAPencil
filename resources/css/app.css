@@ -9,4 +9,6 @@ html {
 
 :root {
     --black: #0c0a09;
+    --border: rgba(139,134,128, 0.25);
 }
+

@@ -23,12 +23,12 @@
                         <br class="block lg:hidden">
                         Supplies
                     </a>
-                    <a class="mr-6 text-center text-[2rem] w-full px-10 py-4 lg:py-8 rounded-md border border-[var(--border)] bg-black/[.25] hover:bg-transparent backdrop-blur-md hover:border-blue-500 transition-colors max-w-[320px]" href="/offer">
+                    <a class="mr-6 text-center text-[2rem] w-full px-10 py-4 lg:py-8 rounded-md border border-[var(--border)] bg-[var(--glass-black-25)] hover:bg-transparent backdrop-blur-md hover:border-blue-500 transition-colors max-w-[320px]" href="/offer">
                         Offer 
                         <br class="block lg:hidden">
                         Supplies
                     </a>
-                    <a class="mr-6 text-center text-[2rem] w-full px-10 py-4 lg:py-8 rounded-md border border-[var(--border)] bg-black/[.25] hover:bg-transparent  backdrop-blur-md hover:border-green-500 transition-colors max-w-[320px]" href="/ask-for">
+                    <a class="mr-6 text-center text-[2rem] w-full px-10 py-4 lg:py-8 rounded-md border border-[var(--border)] bg-[var(--glass-black-25)] hover:bg-transparent  backdrop-blur-md hover:border-green-500 transition-colors max-w-[320px]" href="/ask-for">
                         Ask 
                         <br class="block lg:hidden">
                         <span class="whitespace-nowrap">For Supplies</span>
@@ -51,7 +51,7 @@
         <article id="section--home-about" class="mb-52 max-h-[700px]">
             <div class="px-32 bg-[url('/public/imgs/heroCircle.png')] grid grid-cols-2 grid-rows-1 mb-4 relative">
                 <div class="flex flex-col justify-center items-start">
-                    <h2 class="text-[6rem] w-full text-center">Borrow For Good</h2>
+                    <h2 class="text-[6rem] w-full text-center font-light">Borrow For Good</h2>
                     <p class="font-light text-base">A simple request from a student can often seem like nothing, but for some, it may represent an underlying problem that faces families around the country. Getting supplies for the classroom can be an expensive and simply unatainable as the school year carries on. We're here to connect those that can afford to give a little to help those that need a little.</p>
                     <br>
                     <p class="font-light text-base">In the United States there are an estimated 11.6 million children living below the poverty line. For these families, purchasing school supplies is not something that fits in the budget.</p>
@@ -66,8 +66,8 @@
                     </p>
                 </div>
                 <div class="flex items-center justify-center col-start-2 col-end-3 row-start-1 row-end-2 px-10 -mb-16 h-[400px]">
-                    <div class="border w-full h-4/6 relative backdrop-blur-md rounded-md bg-black/[0.25] ml-12">
-                    <div class="border w-full h-full absolute backdrop-blur-md rounded-md right-10 top-10 pl-8 bg-black/[0.5] ">
+                    <div class="border w-full h-4/6 relative backdrop-blur-md rounded-md bg-[var(--glass-black-25)] ml-12">
+                    <div class="border w-full h-full absolute backdrop-blur-md rounded-md right-10 top-10 pl-8 bg-[var(--glass-black-5)] ">
                         <div class="w-full h-1/2 text-center py-12 px-10">
                             <h3 class="mb-8 text-lg">The cost of school supplies <br> <i>on average</i>
                             </h3>
@@ -101,9 +101,9 @@
             </div>
         </article>
         <!-- Mission -->
-        <section class="mt-50 px-32">
-            <h2 class="text-[6rem] w-full text-center">Our Goal</h2>
-            <p class="font-light text-base w-1/2 text-center mx-auto mb-20">To build an easy to use resource for those who can afford to help students and teachers in their community.</p>
+        <section class="mt-52 px-32">
+            <h2 class="text-[6rem] w-full text-center font-light">Our Goal</h2>
+            <p class="font-light text-base w-1/2 text-center mx-auto mb-20">To build an easy to use resource to connect those who can afford to help students and teachers in their community.</p>
             <div class="h-[240px] flex items-center justify-around w-full">
                 <a href="" class="w-1/3 p-10 flex items-center justify-center group">
                     <div class="text-center flex items-center justify-start flex-col">
@@ -128,8 +128,19 @@
                 </a>
             </div>
         </section>
+        <!-- Market -->
+        <section class="mt-52 px-32 h-[calc(100vh_-_220px_-_32rem)]">
+            <h2 class="text-[6rem] w-full text-center font-light mb-10">Recent Listings</h2>
+            <div class="grid grid-cols-3 grid-rows-1 h-[calc(100%_-_11.5rem)] gap-8 bg-[var(--glass-black-5) backdrop-blur-md">
+                    <div class="card border w-full rounded-lg bg-red-100"></div>
+                    <div class="card border w-full rounded-lg bg-red-100"></div>
+                    <div class="card border w-full rounded-lg bg-red-100"></div>
+            </div>
+        </section>
     </main>
     <script>
+
+
         const words = [
             { item: "pencil", color: "text-red-500" },
             { item: "notebook", color: "text-blue-500" },

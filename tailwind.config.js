@@ -21,7 +21,7 @@ export default {
                 'lg':   '2.6rem',
                 'xl':   '3rem',
                 '2xl':  '12rem',
-            }
+            }, 
         },
     },
     plugins: [],

@@ -10,5 +10,15 @@ html {
 :root {
     --black: #0c0a09;
     --border: rgba(139,134,128, 0.25);
+    --glass-black-5: rgba(12, 10, 9, 0.5);
+    --glass-black-25: rgba(12, 10, 9, 0.25);
 }
 
+#header {
+    transition: opacity, transform;
+    transition-duration: 200ms;
+}
+
+#footer--effect {
+    font-size: clamp(8rem, 10.5vw, 18rem);
+}

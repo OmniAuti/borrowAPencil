@@ -1,5 +1,4 @@
-<footer id="footer" class="w-screen max-h-[320px] mt-52 flex items-center justify-center relative">
-
+<footer id="footer" class="w-screen max-h-[300px] flex items-center justify-center relative">
     <div class="w-full h-full flex items-end justify-between pb-0 max-w-[1420px] mr-auto px-8">
         <nav class="w-[180px] flex items-center text-xsm py-8 px-1">
             <ul class="grid grid-cols-3 grid-rows-3 font-thin h-[180px]">

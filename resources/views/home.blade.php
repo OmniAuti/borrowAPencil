@@ -129,12 +129,12 @@
             </div>
         </section>
         <!-- Market -->
-        <section class="mt-52 px-32 h-[calc(100vh_-_220px_-_32rem)]">
+        <section class="mt-52 px-32 h-[calc(100vh_-_220px_-_32rem)] min-h-fit py-8">
             <h2 class="text-[6rem] w-full text-center font-light mb-10">Recent Listings</h2>
-            <div class="grid grid-cols-3 grid-rows-1 h-[calc(100%_-_11.5rem)] gap-8 bg-[var(--glass-black-5) backdrop-blur-md">
-                    <div class="card border w-full rounded-lg bg-red-100"></div>
-                    <div class="card border w-full rounded-lg bg-red-100"></div>
-                    <div class="card border w-full rounded-lg bg-red-100"></div>
+            <div class="grid grid-cols-3 grid-rows-1 gap-8 bg-[var(--glass-black-5) backdrop-blur-md">
+                    <div class="card border w-full rounded-lg bg-white h-[300px]"></div>
+                    <div class="card border w-full rounded-lg bg-white h-[300px]"></div>
+                    <div class="card border w-full rounded-lg bg-white h-[300px]"></div>
             </div>
         </section>
     </main>

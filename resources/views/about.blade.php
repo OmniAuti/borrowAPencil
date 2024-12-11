@@ -1,6 +1,6 @@
 <x-layout>
     <main id="main" class="main h-fit relative w-100">
-        <h1 class="text-[8rem] lg:text-[12rem] leading-none font-extralight mt-[--headerHeight] pt-10 text-center">An ethos of providing for students</h1>
+        <h1 class="px-10 xl:px-32 text-[8rem] xl:text-[12rem] leading-none font-extralight mt-[--headerHeight] pt-10 text-center">An ethos of providing for students and teachers</h1>
         <!-- About -->
         <article class="mt-52 max-h-[700px]">
             <div class="px-32 grid grid-cols-2 grid-rows-1 mb-4 relative">
@@ -114,21 +114,21 @@
                     <div class="text-center flex items-center justify-start flex-col">
                         <img class="h-[100px] mx-auto mb-10" src="../imgs/borrow.svg" alt="">
                         <h4 class="text-lg group-hover:underline decoration-1 underline-offset-1">Borrow</h4>
-                        <p class="text-base">Browse school supplies that are currently being offered</p>
+                        <p class="text-base w-3/4">Browse school supplies that are currently being offered</p>
                     </div>
                 </a>
                 <a href="" class="w-1/3 p-10 flex items-center justify-center group">
                     <div class="text-center flex items-center justify-start flex-col">
                         <img class="h-[100px] mx-auto mb-10" src="../imgs/offer.svg" alt="">
                         <h4 class="text-lg group-hover:underline decoration-1 underline-offset-1">Offer</h4>
-                        <p class="text-base">Offer school supplies for students and teachers</p>
+                        <p class="text-base w-3/4">Offer school supplies for students and teachers</p>
                     </div>
                 </a>
                 <a href="" class="w-1/3 p-10 flex items-center justify-center group">
                     <div class="text-center flex items-center justify-start flex-col">
                         <img class="h-[90px] mx-auto mb-10" src="../imgs/asking.svg" alt="">
                         <h4 class="text-lg group-hover:underline decoration-1 underline-offset-1">Ask</h4>
-                        <p class="text-base">Make a request for school supplies for your classroom or student</p>
+                        <p class="text-base w-3/4">Ask about supplies for your classroom or student</p>
                     </div>
                 </a>
             </div>

@@ -32,7 +32,7 @@
                 </li>
                 <li class="col-start-2 col-end-3 row-start-3 row-end-4 justify-self-start self-end">
                     <a class="grow flex h-full items-center justify-end group cursor-pointer" href="/ask">
-                        <p class="leading-none font-light before:absolute before:w-0 before:bg-white before:transition-[width] before:opacity-0 group-hover:before:opacity-100 after:opacity-100 group-hover:after:opacity-0 before:duration-500 after:duration-500 before:origin-left before:left-0 after:origin-right after:h-[1px] after:w-0 group-hover:after:w-full after:bottom-0 after:right-0  after:transition-[width] after:absolute after:bg-white group-hover:before:w-full relative before:h-[1px] before:bottom-0">
+                        <p class="leading-none font-light before:absolute before:w-0 before:bg-white before:transition-[width] before:opacity-0 group-hover:before:opacity-100 after:opacity-100 group-hover:after:opacity-0 before:duration-500 after:duration-500 before:origin-left before:left-0 after:origin-right after:h-[1px] after:w-0 group-hover:after:w-full after:bottom-0 after:right-0  after:transition-[width] after:absolute after:bg-white group-hover:before:w-full relative before:h-[1px] before:bottom-0 ">
                             Account
                         </p>
                     </a>

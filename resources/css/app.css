@@ -7,11 +7,13 @@ html {
     font-family: Figtree, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
+
 :root {
     --black: #0c0a09;
     --border: rgba(139,134,128, 0.25);
     --glass-black-5: rgba(12, 10, 9, 0.5);
     --glass-black-25: rgba(12, 10, 9, 0.25);
+    --headerHeight: calc(6.4rem + 20px);
 }
 
 #header {

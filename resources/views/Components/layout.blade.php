@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="overflow-x-hidden">
     <x-head_html></x-head_html>
 
-    <body class="antialiased text-white bg-[var(--black)] bg-[url('/public/imgs/background-texture.png')] mx-auto max-w-[1420px]">
+    <body class="antialiased text-white bg-[var(--black)] bg-[url('/public/imgs/background-texture.png')] mx-auto max-w-[1420px] pt-[--headerHeight]">
     <x-header></x-header>
     {{ $slot }}
     <x-footer></x-footer>

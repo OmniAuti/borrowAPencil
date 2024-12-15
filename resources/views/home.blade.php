@@ -1,7 +1,7 @@
 <x-layout>
     <main id="main" class="main h-fit relative w-100">
         <!-- Home -->
-        <section class="pl-16 mb-52 flex items-start h-[calc(100vh_-_64px)] mt-[--headerHeight]">
+        <section class="pl-16 mb-52 flex items-start h-[calc(100vh_-_var(--headerHeight))]">
             <div class="h-full flex flex-col justify-evenly w-5/6 md:pl-24 pl-0 z-50">
                 <div >
                     <h1 class="whitespace-nowrap text-[12rem] leading-none font-extralight">Can I 
@@ -131,10 +131,24 @@
         <!-- Market -->
         <section class="mt-52 px-32 h-[calc(100vh_-_220px_-_32rem)] min-h-fit py-8">
             <h2 class="leading-none text-[6rem] w-full text-center font-light mb-10">Recent Listings</h2>
-            <div class="grid grid-cols-3 grid-rows-1 gap-8 bg-[var(--glass-black-5) backdrop-blur-md">
-                    <div class="card border w-full rounded-lg bg-white h-[300px]"></div>
-                    <div class="card border w-full rounded-lg bg-white h-[300px]"></div>
-                    <div class="card border w-full rounded-lg bg-white h-[300px]"></div>
+            <div class="mb-10 grid grid-cols-3 grid-rows-1 gap-8 bg-[var(--glass-black-5) backdrop-blur-md">
+
+                @foreach ($supplies as $supply)
+
+                    <a href="listing/borrow/{{$supply['id']}}">
+                        <div class="card border w-full rounded-lg text-black bg-white h-[300px]">
+                            <ul>
+                                <li>{{ $supply['type']}}</li>
+                                <li>{{$supply['category']}}</li>
+                                <li>{{$supply['location']}}</li>
+                            </ul>
+                        </div>
+                    </a>
+                 
+                @endforeach
+            </div>
+            <div class="mx-auto w-fit">
+                <a href="/borrow" class="text-base text-center hover:underline decoration-1 underline-offset-1">View All Listings</a>
             </div>
         </section>
     </main>

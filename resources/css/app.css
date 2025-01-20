@@ -13,7 +13,10 @@ html {
     --border: rgba(139,134,128, 0.25);
     --glass-black-5: rgba(12, 10, 9, 0.5);
     --glass-black-25: rgba(12, 10, 9, 0.25);
-    --headerHeight: calc(6.4rem + 20px);
+    --headerHeight: 6.4rem;
+    --padding: 1.6rem;
+    --margin-form: 2rem;
+    --margin-label: .5rem;
 }
 
 #header {

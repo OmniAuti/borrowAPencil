@@ -7,7 +7,7 @@
             </a>
         </div>
 
-        <nav class="flex items-center ">
+        <nav class="flex items-center pr-4">
             <ul class="flex flex-row justify-end h-full">
                 <li class="ml-20">
                     <a aria-current="{{ request()->is('about') ? 'page' : 'false'}}" class="grow flex h-full items-center justify-end group cursor-pointer p-4" href="/about">
@@ -37,11 +37,22 @@
                         </p>
                     </a>
                 </li>
+                @auth
                 <li class="ml-20">
                     <a class="grow flex items-center justify-end cursor-pointer group p-4" href="/dashboard">
                         <img class="h-auto w-[2rem]" src="{{url('imgs/user.svg')}}" alt="Account Icon">
                     </a>
                 </li>
+                @endauth
+                @guest
+                <li class="ml-20">
+                    <a class="grow flex items-center justify-end cursor-pointer group p-4" href="/login">
+                        <p class="{{ !request()->is('login') ? 'font-light before:absolute before:w-0 before:bg-white before:transition-[width] before:opacity-0 group-hover:before:opacity-100 after:opacity-100 group-hover:after:opacity-0 before:duration-500 after:duration-500 before:origin-left before:left-0 after:origin-right after:h-[1px] after:w-0 group-hover:after:w-full after:bottom-2 after:right-0  after:transition-[width] after:absolute after:bg-white group-hover:before:w-full relative before:h-[1px] before:bottom-2' : 'font-light before:absolute before:bg-white before:transition-[width] before:opacity-100  before:duration-1000 after:duration-1000 before:origin-left before:left-0 before:w-full relative before:h-[1px] before:bottom-2'}}">
+                            Login
+                        </p>
+                    </a>
+                </li>
+                @endguest
             </ul>
         </nav>
     </div>

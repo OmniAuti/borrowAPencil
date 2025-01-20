@@ -67,38 +67,38 @@
                 </div>
                 <div class="flex items-center justify-center col-start-2 col-end-3 row-start-1 row-end-2 px-10 -mb-16 h-[400px]">
                     <div class="border w-full h-4/6 relative backdrop-blur-md rounded-md bg-[var(--glass-black-25)] ml-12">
-                    <div class="border w-full h-full absolute backdrop-blur-md rounded-md right-10 top-10 pl-8 bg-[var(--glass-black-5)] ">
-                        <div class="w-full h-1/2 text-center py-12 px-10">
-                            <h3 class="mb-8 text-lg">The cost of school supplies <br> <i>on average</i>
-                            </h3>
-                            <div class="flex items-center text-xsm">
-                                <div class="w-2/5 mx-1">
-                                    <p class="font-light mb-1 text-left">Elementary</p>
-                                    <div class="bg-red-500 py-1 min-w-fit mx-auto sm:mx-0 px-4 sm:px-0 w-1/5 sm:w-full backdrop-blur-lg">$1,017.37
-                                        
+                        <div class="border w-full h-full absolute backdrop-blur-md rounded-md right-10 top-10 pl-8 bg-[var(--glass-black-5)] ">
+                            <div class="w-full h-1/2 text-center py-12 px-10">
+                                <h3 class="mb-8 text-lg">The cost of school supplies <br> <i>on average</i>
+                                </h3>
+                                <div class="flex items-center text-xsm">
+                                    <div class="w-2/5 mx-1">
+                                        <p class="font-light mb-1 text-left">Elementary</p>
+                                        <div class="bg-red-500 py-1 min-w-fit mx-auto sm:mx-0 px-4 sm:px-0 w-1/5 sm:w-full backdrop-blur-lg">$1,017.37
+                                            
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="w-2/5 mx-1">
-                                    <p class="font-light text-left mb-1">Middle School
-                                        
-                                    </p>
-                                    <div class="bg-blue-500 py-1 mx-auto sm:mx-0 min-w-fit px-8 sm:px-0 w-2/5 sm:w-full backdrop-blur-lg">$1,277.35
+                                    <div class="w-2/5 mx-1">
+                                        <p class="font-light text-left mb-1">Middle School
+                                            
+                                        </p>
+                                        <div class="bg-blue-500 py-1 mx-auto sm:mx-0 min-w-fit px-8 sm:px-0 w-2/5 sm:w-full backdrop-blur-lg">$1,277.35
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="w-3/5 mx-1">
-                                    <p class="font-light text-left mb-1">High School
+                                    <div class="w-3/5 mx-1">
+                                        <p class="font-light text-left mb-1">High School
 
-                                    </p>
-                                    <div class="bg-green-500 py-1 mx-auto sm:mx-0 min-w-fit px-10 sm:px-0 w-3/5 sm:w-full backdrop-blur-lg">$1,667.90
+                                        </p>
+                                        <div class="bg-green-500 py-1 mx-auto sm:mx-0 min-w-fit px-10 sm:px-0 w-3/5 sm:w-full backdrop-blur-lg">$1,667.90
 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </article>
         <!-- Mission -->
         <section class="mt-52 px-32">

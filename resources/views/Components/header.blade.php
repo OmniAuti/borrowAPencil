@@ -40,7 +40,7 @@
                 @auth
                 <li class="ml-20">
                     <a class="grow flex items-center justify-end cursor-pointer group p-4" href="/dashboard">
-                        <img class="h-auto w-[2rem]" src="{{url('imgs/user.svg')}}" alt="Account Icon">
+                        <img class="min-w-[2rem] w-[2rem]" src="{{url('imgs/user.svg')}}" alt="Account Icon">
                     </a>
                 </li>
                 @endauth

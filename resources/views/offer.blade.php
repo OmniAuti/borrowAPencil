@@ -5,7 +5,7 @@
         <div class="grid grid-cols-2 grid-rows-1 gap-20 h-full">
             <div class="border col-start-1 col-end-2 row-start-1 row-end-2">
                 <form action="POST">
-                    <div>
+                    <!-- <div>
                         <x-form_label for="type">Type Of Post</x-form_label>
                         <select name="type" id="type" class="text-[var(--black)]">
                             <option selected disabled value="">Select One</option>
@@ -13,11 +13,27 @@
                             <option value="offer">Offer Supplies</option>
                         </select>
                         <x-form_error name="type"></x-form_error>
-                    </div>
+                    </div> -->
                     <div>
                         <x-form_label for="category">Supply Category</x-form_label>
                         <select id="category" class="text-[var(--black)]">
-                            <option value=""></option>
+                            <option selected disabled value="">Select One Category</option>
+                            <option value="notebooks_paper">Notebooks & Paper</option>
+                            <option value="binders_folders">Binders & Folders</option>
+                            <option value="scissors_glue">Scissors & Glue</option>
+                            <option value="pencil_cases">Pencil Cases</option>
+                            <option value="pens_pencils">Pens & Pencils</option>
+                            <option value="sharpeners_erasers">Sharpeners & Erasers</option>
+                            <option value="markers_highlighters">Markers & Highlighters</option>
+                            <option value="art_supplies">Art Supplies</option>
+                            <option value="hygiene_cleaning">Hygiene & Cleaning</option>
+                            <option value="rulers_calculators">Rulers & Calculators</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="backpacks_bags">Backpacks & Bags</option>
+                            <option value="lunchbox_bottle">Lunchboxes & Water Bottles</option>
+                            <option value="study_materials">Study Materials & Flashcards</option>
+                            <option value="textbooks">Textbooks</option>
+                            <option value="books">Miscellaneous Books</option>
                         </select>
                     </div>
                     <div>

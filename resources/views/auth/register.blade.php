@@ -8,35 +8,35 @@
                     <div class="sm:w-1/2 sm:pr-[var(--padding)]">
                         <div class="mb-[var(--margin-form)] flex items-start justify-between flex-col">
                             <x-form_label class="mb-[var(--margin-label)]" for="name">Name</x-form_label>
-                            <x-form_input required type="text" name="name" id="name" :value="old('name')" class="text-black"></x-form_input>
+                            <x-form_input required type="text" name="name" id="name" :value="old('name')" class="text-[var(--black)]"></x-form_input>
                             <x-form_error name="name"></x-form_error>
                         </div>
                         <div class="mb-[var(--margin-form)] flex items-start justify-between flex-col">
                             <x-form_label class="mb-[var(--margin-label)]" for="email">Email</x-form_label>
-                            <x-form_input required type="email" name="email" id="email" :value="old('email')" class="text-black"></x-form_input>
+                            <x-form_input required type="email" name="email" id="email" :value="old('email')" class="text-[var(--black)]"></x-form_input>
                             <x-form_error name="email"></x-form_error>
                         </div>
                         <div class="mb-[var(--margin-form)] flex items-start justify-between flex-col">
                             <x-form_label class="mb-[var(--margin-label)]" for="email_confirmation">Confirm Email</x-form_label>
-                            <x-form_input required type="email" name="email_confirmation" id="email_confirmation" :value="old('email_confirmation')" class="text-black"></x-form_input>
+                            <x-form_input required type="email" name="email_confirmation" id="email_confirmation" :value="old('email_confirmation')" class="text-[var(--black)]"></x-form_input>
                             <x-form_error name="email_confirmation"></x-form_error>
                         </div>
                     </div>    
                     <div class="sm:w-1/2 sm:pl-[var(--padding)]">
                         <div class="mb-[var(--margin-form)] flex items-start justify-between flex-col">
                             <x-form_label class="mb-[var(--margin-label)]" for="password">Password</x-form_label>
-                            <x-form_input required type="password" name="password" id="password" class="text-black"></x-form_input>
+                            <x-form_input required type="password" name="password" id="password" class="text-[var(--black)]"></x-form_input>
                             <x-form_error name="password"></x-form_error>
                         </div>
                         
                         <div class="mb-[var(--margin-form)] flex items-start justify-between flex-col">
                             <x-form_label class="mb-[var(--margin-label)]" for="password_confirmation">Confirm Password</x-form_label>
-                            <x-form_input required type="password" name="password_confirmation" id="password_confirmation" class="text-black"></x-form_input>
+                            <x-form_input required type="password" name="password_confirmation" id="password_confirmation" class="text-[var(--black)]"></x-form_input>
                             <x-form_error name="password_confirmation"></x-form_error>
                         </div>
                         <div class="mb-[var(--margin-form)] flex items-start justify-between flex-col">
                             <x-form_label class="mb-[var(--margin-label)]" for="zipcode">5 Digit Zip Code</x-form_label>
-                            <x-form_input required type="text" pattern="[0-9]{5}" title="Five digit zip code" name="zipcode" id="zipcode" :value="old('zipcode')" class="text-black"></x-form_input>
+                            <x-form_input required type="text" pattern="[0-9]{5}" title="Five digit zip code" name="zipcode" id="zipcode" :value="old('zipcode')" class="text-[var(--black)]"></x-form_input>
                             <x-form_error name="zipcode"></x-form_error>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
                 <div>
                 <div class="sm:mx-auto sm:text-center mb-[var(--margin-form)] flex items-start justify-between flex-col sm:max-w-[245px]">
                     <x-form_label class="mb-[var(--margin-label)]" for="role">Are you a Teacher or Student?</x-form_label>
-                    <select required name="role" id="role" :value="old('role')" class="text-black p-2 rounded-md w-full">
+                    <select required name="role" id="role" :value="old('role')" class="text-[var(--black)] p-2 rounded-md w-full">
                         <option disabled selected value="">Select One</option>
                         <option value="teacher">Teacher</option>
                         <option value="student">Student</option>

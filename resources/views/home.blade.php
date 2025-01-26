@@ -136,7 +136,7 @@
                 @foreach ($supplies as $supply)
 
                     <a href="listing/borrow/{{$supply['id']}}">
-                        <div class="card border w-full rounded-lg text-black bg-white h-[300px]">
+                        <div class="card border w-full rounded-lg text-[var(--black)] bg-white h-[300px]">
                             <ul>
                                 <li>{{ $supply['type']}}</li>
                                 <li>{{$supply['category']}}</li>

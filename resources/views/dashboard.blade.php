@@ -1,8 +1,8 @@
 <x-layout>
-    <main id="main" class="main p-10 min-h-fit relative w-100 h-[calc(100vh_-_var(--headerHeight)_-_11.7rem)] mx-auto">
+    <main id="main" class="main p-10 w-100 h-[calc(100vh_-_var(--headerHeight))] mx-auto">
         <h1 class="text-[6rem] leading-none font-extralight mb-[calc(var(--headerHeight)_/_2)]">Dashboard</h1>
        
-        <div class="grid grid-cols-1 grid-row-7 md:grid-cols-3 md:grid-rows-3 gap-y-5 gap-x-4 h-full">
+        <div class="min-h-[300px] grid grid-cols-1 grid-row-7 md:grid-cols-3 md:grid-rows-3 gap-y-5 gap-x-4 h-[calc(100vh_-_var(--headerHeight)_-_14.7rem)]">
 
             <a href="/messages" class="border rounded-md md:col-start-1 md:row-start-1 md:col-end-2 md:row-end-2 flex items-end text-base p-[1rem]">
                 <div>
@@ -43,6 +43,5 @@
             </form>
 
         </div>
-   
     </main> 
 </x-layout>

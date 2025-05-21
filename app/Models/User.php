@@ -49,6 +49,10 @@ class User extends Authenticatable
     }
 
     public function listingsOffer() {
-        return $this->hasMany(ListingBorrow::class);
+        return $this->hasMany(ListingOffer::class);
+    }
+    
+    public function listingsAsk() {
+        return $this->hasMany(ListingAsk::class);
     }
 }

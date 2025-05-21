@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('listing_asks', function (Blueprint $table) {
             $table->id();
+            $table->foreignIdFor(App\Models\user::class);
+            $table->string('category');
+            $table->string('level');
+            $table->string('condition');
+            $table->string('details');
+            $table->string('zipcode');
             $table->timestamps();
         });
     }

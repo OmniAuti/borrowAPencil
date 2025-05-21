@@ -14,9 +14,8 @@ class ListingBorrow extends Model {
 
      protected $fillable = ['location', 'category', 'type'];
 
-
-   public function user() {
-        return $this->belongsTo(User::class);
-   }
+     public function user() {
+          return $this->belongsTo(User::class);
+     }
 
 }

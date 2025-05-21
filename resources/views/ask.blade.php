@@ -1,12 +1,11 @@
 <x-layout>
-    <main id="main" class="main p-10 h-[calc(100vh_-_var(--headerHeight))] mx-auto">
-        <h1 class="text-[6rem] leading-none font-extralight mb-[calc(var(--headerHeight)_/_2)]">Offer School Supplies</h1>
+    <main id="main" class="main p-10 w-100 h-[calc(100vh_-_var(--headerHeight))] mx-auto">
+        <h1 class="text-[6rem] leading-none font-extralight mb-[calc(var(--headerHeight)_/_2)]">Ask For School Supplies</h1>
         
         <div class="flex gap-20 h-fit px-10">
             <div class="border p-[var(--padding)] text-[1.8rem] w-full max-w-[440px]">
-                <form action="/offer" method="POST">
-                    @csrf
-                    <input type="hidden" name="type" value="offer">
+                <form action="POST" >
+                    <input type="hidden" name="type" value="ask">
                     <div class="mb-[var(--margin-form)] flex items-start justify-between flex-col">
                         <x-form_label for="category" class="mb-[var(--margin-label)]">Supply Category</x-form_label>
                         <select id="category" class="text-[var(--black)] p-2 rounded-md w-full">
@@ -45,6 +44,7 @@
                         <x-form_label for="condition" class="mb-[var(--margin-label)]">Condition</x-form_label>
                         <select name="condition" id="condition" class="text-[var(--black)] p-2 rounded-md w-full">
                             <option selected disabled value="">Select One</option>
+                            <option value="any">Any Condition</option>
                             <option value="new">New</option>
                             <option value="like_new">Like New</option>
                             <option value="slightly_used">Slightly Used</option>
@@ -148,12 +148,12 @@
                         </select>
                     </div>
                     <div class=" flex items-start justify-between flex-col">
-                        <x-form_input type="submit" value="Offer Supplies" class="text-white cursor-pointer hover:underline max-w-fit px-10 border mx-auto"></x-form_input>
+                        <x-form_input type="submit" value="Ask For Supplies" class="text-white cursor-pointer hover:underline max-w-fit px-10 border mx-auto"></x-form_input>
                     </div>
                 </form>
             </div>
             <div class="border flex-grow">
-                No Posts
+            Posts
             </div>
         </div>
       

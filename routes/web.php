@@ -6,9 +6,12 @@ use App\Models\ListingBorrow;
 use App\Models\User;
 use App\Http\Controllers\RegisteredUserController;
 use App\Http\Controllers\SessionController;
+use App\Models\ListingOffer;
 
 Route::get('/', function () {
-    return view('home', ['supplies' => ListingBorrow::all()]);
+    $supplies = [];
+    // return view('home', ['supplies' => ListingBorrow::all()]);
+    return view('home', ['supplies' => $supplies]);
 });
 
 Route::get('/dashboard', function() {
@@ -22,6 +25,11 @@ Route::get('/about', function() {
 // Listings Page
 Route::get('/offer', function() {
     return view('offer');
+});
+Route::post('/offer', function() {
+    $attributes = request()->all();
+
+    dd($attributes);
 });
 Route::get('/borrow', function() {
     return view('borrow');

@@ -11,12 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('listing_borrow', function (Blueprint $table) {
+        Schema::create('listing_offers', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(App\Models\user::class);
-            $table->string('location');
             $table->string('category');
-            $table->string('type');
+            $table->string('level');
+            $table->string('condition');
+            $table->string('details');
+            $table->string('zipcode');
             $table->timestamps();
         });
     }
@@ -26,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('listing_borrow');
+        Schema::dropIfExists('listing_offers');
     }
 };

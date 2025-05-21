@@ -1,1 +1,1 @@
-<input {{$attributes->merge(['class' => 'text-black p-2 rounded-md w-full'])}}>
+<input {{$attributes->merge(['class' => 'text-[var(--black)] p-2 rounded-md w-full'])}}>
